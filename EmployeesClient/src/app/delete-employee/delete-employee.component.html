@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title
+      >Are you sure you want to delete this employee?</mat-card-title
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <b>First Name: </b> {{ employee.FirstName }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <b>Last Name: </b> {{ employee.LastName }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item> <b>Email: </b> {{ employee.Email }} </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <b>PhoneNumber: </b> {{ employee.PhoneNumber }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item> <b>Mobile: </b> {{ employee.Mobile }} </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button (click)="cancel()">Cancel</button>
+    <button mat-raised-button color="warn" (click)="confirm()">Delete</button>
+  </mat-card-actions>
+</mat-card>

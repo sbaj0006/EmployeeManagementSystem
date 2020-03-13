@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Edit Employee</h2>
+<mat-dialog-content [formGroup]="form">
+  <mat-form-field class="new-employee-field">
+    <input matInput placeholder="First Name" formControlName="FirstName" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-employee-field">
+    <input matInput placeholder="Last Name" formControlName="LastName" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-employee-field">
+    <input matInput placeholder="Email" formControlName="Email" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-employee-field">
+    <input matInput placeholder="Phone Number" formControlName="PhoneNumber" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-employee-field">
+    <input matInput placeholder="Mobile" formControlName="Mobile" />
+  </mat-form-field>
+  <br />
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Close</button>
+  <button
+    class="mat-raised-button mat-primary"
+    [disabled]="!form.valid"
+    (click)="save()"
+  >
+    Save
+  </button>
+</mat-dialog-actions>

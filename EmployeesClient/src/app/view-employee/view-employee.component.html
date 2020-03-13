@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-header>
+    <h1>Employee Details</h1>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <b>First Name: </b> {{ employee.FirstName }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <b>Last Name: </b> {{ employee.LastName }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item> <b>Email: </b> {{ employee.Email }} </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <b>PhoneNumber: </b> {{ employee.PhoneNumber }}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item> <b>Mobile: </b> {{ employee.Mobile }} </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button (click)="cancel()">Cancel</button>
+  </mat-card-actions>
+</mat-card>
